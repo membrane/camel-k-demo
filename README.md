@@ -1,9 +1,9 @@
-== Begleitmaterial zum Video ==
+# Begleitmaterial zum Video #
 
 Camel K serverless Integration auf Kubernetes ( Deutsch )
 https://www.youtube.com/watch?v=ZY9s4zdm_Us
 
-== Installation, Konfiguration und Start ==
+## Installation, Konfiguration und Start ##
 ```
 set HUB_PASSWORD=...
 ```
@@ -31,7 +31,7 @@ helm install my-po stable/prometheus-operator
 ```
 kamel run --trait prometheus.enabled=true --trait prometheus.service-monitor-labels=release=my-po git/camel-k/examples/Sample.java
 ```
-== Deinstallation ==
+## Deinstallation ##
 
 ```
 kubectl delete all,pvc,configmap,rolebindings,clusterrolebindings,secrets,sa,roles,clusterroles,crd -l app=camel-k
